@@ -29,15 +29,15 @@ notify.send(actor, recipient, verb, action_object, target, level, description, p
 ```
 
 **Arguments**:
-- **actor:**An object of any type. (Required) Note: Use sender instead of actor if you intend to use keyword arguments
-- **verb:**An string. (Required)
-- **action_object:**An object of any type. (Optional)
-- **recipient:**A Group or a User QuerySet or a list of User. (Required)
-- **target:**An object of any type. (Optional)
-- **level:**One of Notification.LEVELS (‘success’, ‘info’, ‘warning’, ‘error’) (default=info). (Optional)
-- **description:**An string. (Optional)
-- **public:**An boolean (default=True). (Optional)
-- **timestamp:**An tzinfo (default=timezone.now()). (Optional)
+- **actor:** An object of any type. (Required) Note: Use sender instead of actor if you intend to use keyword arguments
+- **verb:** An string. (Required)
+- **action_object:** An object of any type. (Optional)
+- **recipient:** A Group or a User QuerySet or a list of User. (Required)
+- **target:** An object of any type. (Optional)
+- **level:** One of Notification.LEVELS (‘success’, ‘info’, ‘warning’, ‘error’) (default=info). (Optional)
+- **description:** An string. (Optional)
+- **public:** An boolean (default=True). (Optional)
+- **timestamp:** An tzinfo (default=timezone.now()). (Optional)
 
 To return unread notification for a single user, we can do
 ```md
